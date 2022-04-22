@@ -50,7 +50,7 @@ https://stackoverflow.com/questions/11075927/how-can-i-use-setinterval-or-settim
 https://developer.mozilla.org/en-US/docs/Web/API/setInterval
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-I found adding a timer for how long the player could make a guess to be quite a challenge. I started by reading about the setInterval() function like the tutorial suggested. 
+I found adding a timer for how long the player could make a guess to be quite a challenge. I started by reading about the setInterval function like the tutorial suggested. First, I tried to call setInterval from playClueSequence, so that the timer would start after the clues played. I stored the intervalID in a global variable so I could clear it later, and had it call loseGame after a delay defined by the global constant, timer. Then, I called clearInterval in the guess function so that the timer would stop once the player made a guess. The problem with this approach became clear when I tried to display the timer to the player. I was unable to find how much time was left before setInterval would call loseGame. My next idea was to start by displaying the timer, and once the timer hit 0, I could call loseGame. I didn't know how to go about that, but after some googling I was able to find an example of someone using setInterval to implement a timer, which I modidfied to make my startTimer function. I used this startTimer function in the same way that I originally used the setInterval function and it wokred this time.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 [YOUR ANSWER HERE]
@@ -62,7 +62,7 @@ I found adding a timer for how long the player could make a guess to be quite a 
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording](https://www.loom.com/share/2b3ca72741fe433aae463b3b92d0c019)
 
 
 ## License
