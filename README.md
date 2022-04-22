@@ -50,7 +50,7 @@ https://stackoverflow.com/questions/11075927/how-can-i-use-setinterval-or-settim
 https://developer.mozilla.org/en-US/docs/Web/API/setInterval
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-I found adding a timer for how long the player could make a guess to be quite a challenge. I started by reading
+I found adding a timer for how long the player could make a guess to be quite a challenge. I started by reading about the setInterval() function like the tutorial suggested. 
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 [YOUR ANSWER HERE]
