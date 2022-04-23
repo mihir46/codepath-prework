@@ -50,12 +50,15 @@ https://stackoverflow.com/questions/11075927/how-can-i-use-setinterval-or-settim
 https://developer.mozilla.org/en-US/docs/Web/API/setInterval
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
+
 I found adding a timer for how long the player could make a guess to be quite a challenge. I started by reading about the setInterval function like the tutorial suggested. First, I tried to call setInterval from playClueSequence, so that the timer would start after the clues played. I stored the intervalID in a global variable so I could clear it later, and had it call loseGame after a delay defined by the global constant, timer. Then, I called clearInterval in the guess function so that the timer would stop once the player made a guess. The problem with this approach became clear when I tried to display the timer to the player. I was unable to find how much time was left before setInterval would call loseGame. My next idea was to start by displaying the timer, and once the timer hit 0, I could call loseGame. I didn't know how to go about that, but after some googling I was able to find an example of someone using setInterval to implement a timer, which I modidfied to make my startTimer function. I used this startTimer function in the same way that I originally used the setInterval function and it wokred this time.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
+
 I am really curious about how timing and delays work for web pages after working with that in the setTimeout and setInterval functions. It definitely felt like the delay for these functions did not work as I thought they would. For example, I assumed once the execution reached a setInterval, then the delay would start counting down, but that does not seem to be the case. It might also be the case that I don't really understand how the execution works (which lines of code are executed when), so I would like to learn more about that to clear up my fundamentals.
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
+
 One thing I would like to change would be the clunkiness of the timer. It doesn't start exactly after the last clue finishes playing, and it also freezes once the player makes a guess instead of resetting the time and then freezing. After that, I would spend time adding new features such as the strikes feature, but with the twist that you have to have already guessed a certain number of clues to be able to make an additional mistake without losing. Another feature I thought of would be to add a points system in which answering faster and not getting any strikes would give you addtional points.   
 
 
